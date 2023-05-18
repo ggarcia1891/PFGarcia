@@ -1,0 +1,174 @@
+html,body {
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+/*
+colores 
+ rgb(0, 80, 130)
+
+fuentes
+font-family: 'Roboto', sans-serif;
+
+*/
+
+/*----inicio de estilos de header-----*/
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+}
+
+.logo {
+    width: 200px;
+    margin: 20px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: normal;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+
+
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.menu a:hover {
+    color: rgb(0, 80, 130);
+    line-height: 5px;
+}
+
+
+
+.portada {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 60px;
+    line-height: 100%;
+    position: absolute;
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px;
+}
+
+.footer {
+    text-align: left;
+    background-color: #000000;
+   
+}
+
+.footer img {
+    width: 30px;
+    height: auto;
+}
+
+
+
+.footer ul li  {
+	display: inline-block;
+	color:white;
+	font-size: 13px;
+	font-weight: normal;
+	margin-left: 20px;
+	padding: 10px 5px 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------estilos section index----------*/
+
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    line-height: 100%;
+    color: black;
+    text-align: center;
+}
+
+
+.info-inicio {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    margin: 30px;
+}
+
+.texto-pages {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: justify;
+    margin: 30px;
+}
+
+.box-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+    .box-wrap div {
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section {
+        background-color: blue;
+        width: 80px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr 1fr; 
+    }
+
+    /*-----estilos institucional-------*/
+
+    h3 {
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        line-height: 100%;
+        color: black;
+        text-align:left;
+        margin: 30px;
+    }
+
+        /*-----estilos contacto-------*/
+
+    .mapa {
+        margin: 30px;
+    }
+    
