@@ -110,6 +110,7 @@ h2 {
     line-height: 100%;
     color: black;
     text-align: center;
+    padding: 20px;
 }
 
 
@@ -118,7 +119,7 @@ h2 {
     font-size: 16px;
     color: #000000;
     text-align: center;
-    margin: 30px;
+    padding: 0 20px 20px 20px;
 }
 
 .texto-pages {
@@ -170,5 +171,50 @@ h2 {
 
     .mapa {
         margin: 30px;
+    }
+    
+    /*-----cards------*/
+
+    .card-carrera {
+        width: 450px;
+        box-shadow: 0 0 20px gray;
+        margin: 10px;
+    }
+    .card-carrera .contenido-carrera{
+        padding: 10px 20px 20px;
+    }
+    .card-carrera .contenido-carrera div p{
+        text-decoration:line-through;
+    }
+    .card-carrera .contenido-carrera div h4{
+        font-size: 20px;
+        color: rgb(217, 16, 16);
+        margin-bottom: 10px;
+    }
+    .boton{
+        padding: 10px 20px;
+        border: 1px solid black;
+        background-color: black;
+        border-radius: 5px;
+        color: white;
+    }
+    .card-carrera div img {
+        width: 100%;
+    }
+
+    h5 {
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        line-height: 100%;
+        color: black;
+        text-align:left;
+    }
+
+    @media screen and (max-width: 576px){
+        .card-carrera {
+            width: 90%;
+        }
     }
     
