@@ -1,120 +1,117 @@
-html,body {
-    padding: 0;
-    margin: auto;
-    box-sizing: border-box;
-}
-/*
-colores 
- rgb(0, 80, 130)
+    html,body {
+        padding: 0;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    /*
+    colores 
+    rgb(0, 80, 130)
 
-fuentes
-font-family: 'Roboto', sans-serif;
-
-*/
-
-/*----inicio de estilos de header-----*/
-
-.container-header {
-    display: flex;
-    justify-content: space-between;
-    background: white;
-}
-
-.logo {
-    width: 200px;
-    margin: 20px;
-    padding: 5px 5px 5px 5px;
-}
-
-
-header .navbar .navbar-nav .nav-item .nav-link,
-header .navbar .navbar-brand{
-    font-weight:600;
-}
-
-
-
-.portada {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-h1 {
+    fuentes
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 1.5px;
-    font-size: 60px;
-    line-height: 100%;
-    position: absolute;
-    color: white;
-    text-align: center;
-    background-color: rgba(0,0,0,0.4);
-    padding: 20px;
-}
 
-.footer {
-    text-align: left;
-    background-color: #000000;
-   
-}
+    */
 
-.footer img {
-    width: 30px;
-    height: auto;
-}
+    /*----inicio de estilos de header-----*/
+
+    .container-header {
+        display: flex;
+        justify-content: space-between;
+        background: white;
+    }
+
+    .logo {
+        width: 200px;
+        margin: 20px;
+        padding: 5px 5px 5px 5px;
+    }
 
 
-
-.footer ul li  {
-	display: inline-block;
-	color:white;
-	font-size: 13px;
-	font-weight: normal;
-	margin-left: 20px;
-	padding: 10px 5px 10px 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-/*------estilos section index----------*/
+    header .navbar .navbar-nav .nav-item .nav-link,
+    header .navbar .navbar-brand{
+        font-weight:600;
+    }
 
 
-h2 {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 30px;
-    letter-spacing: 1.5px;
-    line-height: 100%;
-    color: black;
-    text-align: center;
-    padding: 20px;
-}
+
+    .portada {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1.5px;
+        font-size: 60px;
+        line-height: 100%;
+        position: absolute;
+        color: white;
+        text-align: center;
+        background-color: rgba(0,0,0,0.4);
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 576px){
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+  
+
+    /*------estilos section index----------*/
 
 
-.info-inicio {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #000000;
-    text-align: center;
-    padding: 0 20px 20px 20px;
-}
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        line-height: 100%;
+        color: black;
+        text-align: center;
+        padding: 20px;
+    }
 
-.texto-pages {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #000000;
-    text-align: justify;
-    margin: 30px;
-}
 
-.box-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-}
+    .info-inicio {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: #000000;
+        text-align: center;
+        padding: 0 20px 20px 20px;
+    }
+
+    .texto-pages {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: #000000;
+        text-align: justify;
+        margin: 30px;
+    }
+
+    .box-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 576px){
+        .box-wrap {
+            width: 100%;
+            display: block;
+            justify-content: center;
+        }
+        
+        .box-wrap img {
+            padding: 10px;            
+        }
+    }
 
     .box-wrap div {
       width: auto;
@@ -195,3 +192,32 @@ h2 {
         }
     }
     
+    /*-----estilos footer-----*/
+
+    .footer {
+        text-align: left;
+        background-color: #000000;
+    
+    }
+
+    .footer img {
+        width: 30px;
+        height: auto;
+    }
+
+    @media screen and (max-width: 576px){
+        .footer {
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    .footer ul li  {
+        display: inline-block;
+        color:white;
+        font-size: 13px;
+        font-weight: normal;
+        margin-left: 20px;
+        padding: 10px 5px 10px 0;
+        font-family: 'Roboto', sans-serif;
+    }
