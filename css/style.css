@@ -27,32 +27,9 @@ font-family: 'Roboto', sans-serif;
 }
 
 
-
-
-.menu a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: normal;
-    font-family: 'Roboto', sans-serif;
-    padding: 10px;
-}
-
-
-
-.menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-    list-style: none;
-    text-decoration: none;
-    margin-left: 200px;
-    padding: 20px;
-}
-
-.menu a:hover {
-    color: rgb(0, 80, 130);
-    line-height: 5px;
+header .navbar .navbar-nav .nav-item .nav-link,
+header .navbar .navbar-brand{
+    font-weight:600;
 }
 
 
