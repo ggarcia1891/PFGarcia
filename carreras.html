@@ -17,14 +17,29 @@
            
             <a href="./index.html" title="Inicio"><img src="./assets/logo2.png" class="logo" alt="Inicio"></a>
 
-            <nav class="menu">
-                <ul>
-                    <li><a href="./institucional.html">INSTITUCIONAL</a></li>
-                    <li><a href="./carreras.html">CARRERAS</a></li>
-                    <li><a href="./admision.html">ADMISIÓN</a></li>
-                    <li><a href="./contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="./institucional.html">INSTITUCIONAL</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./carreras.html">CARRERAS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./admision.html">ADMISIÓN</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
 
         </header>
 
@@ -38,31 +53,86 @@
        
         </main>
 
-        <section>
-            <div>
-                <h3>CARRERAS</h3>
-                <p class="texto-pages">
-                    <strong>Área Ciencias de la Salud</strong>
-                    <br><br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis magna etiam tempor orci eu lobortis. Elit sed vulputate mi sit amet mauris. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Vel pharetra vel turpis nunc eget. Rhoncus dolor purus non enim praesent elementum. Tempus imperdiet nulla malesuada pellentesque elit eget. Aliquam purus sit amet luctus venenatis lectus magna. Euismod in pellentesque massa placerat duis ultricies lacus sed turpis. Fusce id velit ut tortor. Proin sed libero enim sed faucibus turpis in eu mi. Dolor purus non enim praesent elementum facilisis. Eu non diam phasellus vestibulum lorem sed. In egestas erat imperdiet sed euismod nisi porta lorem. Leo in vitae turpis massa sed elementum tempus egestas.
-                    <br><br>    
+      
 
-                    <strong>Área Tecnologías</strong>    
-                    <br><br>   
-                    Iaculis nunc sed augue lacus viverra. Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Aenean sed adipiscing diam donec adipiscing. Tempus egestas sed sed risus pretium quam vulputate dignissim. Leo duis ut diam quam nulla. Urna nunc id cursus metus. Urna neque viverra justo nec ultrices dui sapien eget mi. Nulla porttitor massa id neque aliquam vestibulum morbi. Pharetra massa massa ultricies mi quis. Sapien eget mi proin sed libero enim sed faucibus turpis. Vitae purus faucibus ornare suspendisse sed nisi lacus sed.
-                    <br><br>   
+        <section class="container">
+            <h2 class="text-center">CARRERAS</h2>
+            <div class="row d-flex justify-content-center">
+              
+                <!--CARD 1-->
+              <div class="card-carrera col-xs-12 col-lg-4">
+                <div>
+                  <img src="assets/medicina.jpg" alt="" />
+                </div>
+                <div class="contenido-carrera">
+                  <h5>Medicina</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+                    optio.
+                  </p>
+                </div>
+                <div class="contenido-carrera">
+             
+                  <button class="boton">Más información</button>
+                </div>
+              </div>
+              
+              <!--CARD 2-->
+              <div class="card-carrera col-xs-12 col-lg-4">
+                <div>
+                  <img src="assets/derecho.jpg" alt="" />
+                </div>
+                <div class="contenido-carrera">
+                  <h5>Derecho</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+                    optio.
+                  </p>
+                </div>
+                <div class="contenido-carrera">
+               
+                  <button class="boton">Más información</button>
+                </div>
+              </div>
 
-                    <strong>Área Ciencias Sociales</strong> 
-                    <br><br>   
-                    Iaculis nunc sed augue lacus viverra. Quis risus sed vulputate odio ut enim blandit volutpat maecenas. Aenean sed adipiscing diam donec adipiscing. Tempus egestas sed sed risus pretium quam vulputate dignissim. Leo duis ut diam quam nulla. Urna nunc id cursus metus. Urna neque viverra justo nec ultrices dui sapien eget mi. Nulla porttitor massa id neque aliquam vestibulum morbi. Pharetra massa massa ultricies mi quis. Sapien eget mi proin sed libero enim sed faucibus turpis. Vitae purus faucibus ornare suspendisse sed nisi lacus sed.
-                    <br><br>   
-
-                </p>
+              <!--CARD 3-->
+              <div class="card-carrera col-xs-12 col-lg-4">
+                <div>
+                  <img src="assets/economia.jpg" alt="" />
+                </div>
+                <div class="contenido-carrera">
+                  <h5>Economía</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+                    optio.
+                  </p>
+                </div>
+                <div class="contenido-carrera">
+                
+                  <button class="boton">Más información</button>
+                </div>
+              </div>
+            
+               <!--CARD 4-->
+               <div class="card-carrera col-xs-12 col-lg-4">
+                <div>
+                  <img src="assets/agronomia.jpg" alt="" />
+                </div>
+                <div class="contenido-carrera">
+                  <h5>Agronomía</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+                    optio.
+                  </p>
+                </div>
+                <div class="contenido-carrera">
+             
+                  <button class="boton">Más información</button>
+                </div>
+              </div>
             </div>
 
-
-
-        </section>
+          </section>
 
      
 
