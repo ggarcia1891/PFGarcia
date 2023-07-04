@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale+1.0">
+        <meta name="description" content="Bienvenido al sitio web oficial de la Universidad del Norte">
+        <meta name="keywords" content="Universidad, Uruguay, Estudiar, Facultad, Carreras">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="./assets/favicon.png"/>	
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
@@ -19,7 +22,7 @@
 
     <body>
        
-        <header class="container-header">
+        <header class="container-header fixed-top">
            
             <a href="./index.html"><img src="./assets/logo2.png" alt="Inicio" class="logo" title="Ir a Inicio"></a>
 
@@ -52,8 +55,12 @@
         <main>
             
                 <div class="portada">
-            <img class="portada" src="./assets/portada.jpg" alt="">
-          <h1 class="animate__animated animate__bounceInLeft">Un futuro esperando por vos...</h1>
+            
+            <video autoplay muted loop id="video-portada" class="portada">
+              <source src="./assets/video-portada.mp4" type="video/mp4">
+            </video>
+            <h1 class="animate__animated animate__flash">Un futuro de oportunidades<br>esperando por vos...</h1>
+        
            
         </div>
 
@@ -63,27 +70,49 @@
             <section>
                 <h2>Elegí tu mejor opción</h2>
                 <p class="info-inicio">
-                Lorem ipsum dolor sit amet. Hic quae cupiditate in beatae architecto aut rerum Quis quo adipisci possimus. Et corrupti veritatis ad error animi sit iusto dolore sit consectetur suscipit aut expedita fuga et amet nobis quo praesentium quis. Quo repellendus velit cum delectus velit et voluptatibus corrupti. Qui officiis deserunt ex autem officiis vel laborum illo.
+                  Nuestra universidad se destaca como tu mejor opción educativa. Ofrecemos una educación de calidad en diversos campos académicos, respaldada por profesores apasionados y capacitados. Nuestras instalaciones modernas y servicios de apoyo enriquecen tu experiencia universitaria. Promovemos un ambiente inclusivo y diverso, fomentando amistades y colaboración. Elegí nuestra universidad para una educación inspiradora y preparación para el éxito profesional. 
+                  <br>
+                  ¡Descubrí por qué somos tu mejor opción!
                 </p>
             </section>
-            <img class="portada" src="./assets/compas.jpg" alt="">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/frente.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/compas.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/estudiantes2.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
             <section>
                 <h2>Todo en un mismo lugar</h2>
                 <p class="info-inicio">
-                Lorem ipsum dolor sit amet. Hic quae cupiditate in beatae architecto aut rerum Quis quo adipisci possimus. Et corrupti veritatis ad error animi sit iusto dolore sit consectetur suscipit aut expedita fuga et amet nobis quo praesentium quis. Quo repellendus velit cum delectus velit et voluptatibus corrupti. Qui officiis deserunt ex autem officiis vel laborum illo.
+                  La universidad es un destino educativo completo que ofrece a los estudiantes la oportunidad de encontrar todo en un mismo lugar. Con una amplia variedad de programas académicos, instalaciones de vanguardia y servicios de apoyo, la universidad se enorgullece de ser un centro integral de excelencia académica.
                 </p>
             </section>
            
             <section class="box-wrap">
 
                 <div class="div-g div-2">
-                  <img class="animate__animated animate__fadeIn animate__delay-2s" src="./assets/1.jpg" alt="">
+                  <img class="animate__animated animate__fadeIn animate__delay-2s" src="./assets/1.jpg" alt="estudiantes en aula">
               </div>
               <div class="div-g div-3">
-                  <img class="animate__animated animate__fadeIn animate__delay-2s" src="./assets/2.jpg" alt="">
+                  <img class="animate__animated animate__fadeIn animate__delay-2s" src="./assets/2.jpg" alt="estudiantes en biblioteca">
               </div>
               <div class="div-g div-4">
-                  <img class="animate__animated animate__fadeIn animate__delay-2s" src="./assets/4.jpg" alt="">
+                  <img class="animate__animated animate__fadeIn animate__delay-2s" src="./assets/4.jpg" alt="estudiantes caminando">
               </div>
              
             </section>
@@ -91,7 +120,9 @@
             <section>
                 <h2>Cursos intensivos y cursos a distancia</h2>
                 <p class="info-inicio">
-                Lorem ipsum dolor sit amet. Hic quae cupiditate in beatae architecto aut rerum Quis quo adipisci possimus. Et corrupti veritatis ad error animi sit iusto dolore sit consectetur suscipit aut expedita fuga et amet nobis quo praesentium quis. Quo repellendus velit cum delectus velit et voluptatibus corrupti. Qui officiis deserunt ex autem officiis vel laborum illo.
+                  La universidad ofrece una amplia variedad de oportunidades de aprendizaje adaptadas a las necesidades de cada estudiante. Los cursos intensivos permiten una inmersión y aprendizaje acelerado, brindando una experiencia concentrada y dinámica. También se ofrecen cursos a distancia para aquellos que buscan flexibilidad y accesibilidad geográfica. Estos cursos permiten el estudio en cualquier lugar y a cualquier ritmo, utilizando herramientas en línea. 
+                  <br><br>
+                  La universidad se compromete a brindar opciones educativas inclusivas y enriquecedoras, ya sea a través de cursos intensivos o a distancia, para todos los estudiantes interesados en expandir sus conocimientos y habilidades.
                 </p>
 
             </section>

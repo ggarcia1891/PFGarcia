@@ -10,6 +10,7 @@ rgb(0, 80, 130)
 
 fuentes
 font-family: 'Roboto', sans-serif;
+font-family: 'Bree Serif', serif;
 
 */
 /*----inicio de estilos de header-----*/
@@ -35,22 +36,40 @@ header .navbar .navbar-brand {
   width: 100%;
   align-items: center;
   justify-content: center;
+  opacity: 0.88;
+  background-color: #545456;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Bree Serif", serif;
   letter-spacing: 1.5px;
   font-size: 60px;
+  font-weight: bold;
   line-height: 100%;
   position: absolute;
-  color: white;
+  color: rgb(0, 80, 130);
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+}
+
+h6 {
+  font-family: "Bree Serif", serif;
+  letter-spacing: 1.5px;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 100%;
+  position: absolute;
+  color: rgb(0, 80, 130);
+  text-align: center;
   padding: 20px;
 }
 
 @media screen and (max-width: 576px) {
   h1 {
+    font-size: 30px;
+  }
+  h6 {
     font-size: 30px;
   }
 }
@@ -61,7 +80,7 @@ h2 {
   font-size: 30px;
   letter-spacing: 1.5px;
   line-height: 100%;
-  color: black;
+  color: rgb(0, 80, 130);
   text-align: center;
   padding: 20px;
 }
@@ -70,8 +89,8 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   color: #000000;
-  text-align: center;
-  padding: 0 20px 20px 20px;
+  text-align: justify;
+  padding: 0 50px 30px 50px;
 }
 
 .texto-pages {
@@ -122,21 +141,17 @@ h3 {
   font-size: 30px;
   letter-spacing: 1.5px;
   line-height: 100%;
-  color: black;
+  color: rgb(0, 80, 130);
   text-align: left;
   padding: 20px;
-}
-
-/*-----estilos contacto-------*/
-.mapa {
-  margin: 30px;
 }
 
 /*-----cards------*/
 .card-carrera {
   width: 450px;
   box-shadow: 0 0 20px gray;
-  margin: 10px;
+  margin: 30px;
+  padding: 30px;
 }
 .card-carrera div img {
   width: 100%;
@@ -205,6 +220,58 @@ h5 {
     text-align: center;
     align-items: center;
   }
+}
+/*-----estilos contacto-------*/
+.mapa {
+  margin: 30px;
+}
+@media screen and (max-width: 576px) {
+  .mapa .mapa {
+    width: 300px;
+    margin: 30px;
+  }
+}
+
+.contacto {
+  margin: 50px;
+}
+
+.texto-pages2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #000000;
+  text-align: justify;
+  margin: 30px;
+}
+
+/*-----formulario de contacto------*/
+.formulario {
+  width: 350px;
+  margin: 30px;
+}
+@media screen and (max-width: 576px) {
+  .formulario .formulario {
+    width: 200px;
+    margin: 30px;
+  }
+}
+
+/*------error 404-------*/
+.error {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
+
+.errortexto {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  margin: 100px;
+}
+
+.btn-error {
+  padding: 30px 30px 30px 0;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
